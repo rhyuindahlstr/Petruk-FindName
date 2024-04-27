@@ -61,7 +61,7 @@ int main() {
   vector<string> words(N);
   for (int i = 0; i < N; i++) {
       cin >> words[i];
-  )
+  }
 
   vector<string> matrix = {
         "aaflkhpfssuficiclesgnnh","sfvreomrwlrttsxqqnaoao","qeiaifxaeirfvfysximinji",
@@ -75,7 +75,7 @@ int main() {
   };
 
   for (int i = 0; i < N; i++) {
-      if (searchWord(matrix, words[i])) {
+      if (searchword(matrix, words[i])) {
           cout << "Ada" << endl;
       } else {
           cout << "Tidak Ada" << endl;
