@@ -8,14 +8,14 @@ bool searchword(vector<string> matrix, string word){
   int rows = matrix.size();
   int cols = matrix[0].size();
 
-// Search horizontally
+// Mencari secara horizontal
     for (int i = 0; i < rows; i++) {
         if (matrix[i].find(word) != string::npos) {
             return true;
         }
     }
 
-// Search vertically
+// Mencari secara diagonal
     for (int i = 0; i < cols; i++) {
         string colString = "";
         for (int j = 0; j < rows; j++) {
