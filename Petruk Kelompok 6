@@ -8,14 +8,14 @@ bool searchWord(vector<string> matrix, string word) {
     int rows = matrix.size();
     int cols = matrix[0].size();
 
-    // Search horizontally
+    // mencari ke arah horizontal
     for (int i = 0; i < rows; i++) {
         if (matrix[i].find(word) != string::npos) {
             return true;
         }
     }
 
-    // Search vertically
+    // mencari ke arah vertikal
     for (int i = 0; i < cols; i++) {
         string colString = "";
         for (int j = 0; j < rows; j++) {
@@ -26,7 +26,7 @@ bool searchWord(vector<string> matrix, string word) {
         }
     }
 
-    // Search diagonally (left to right, top to bottom)
+    // mencari diagonal (kiri ke kanan, atas ke bawah)
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             string diagonal = "";
@@ -39,7 +39,7 @@ bool searchWord(vector<string> matrix, string word) {
         }
     }
 
-    // Search diagonally (left to right, bottom to top)
+    // mencari diagonal (kiri ke kanan, bawah ke atas)
     for (int i = rows - 1; i >= 0; i--) {
         for (int j = 0; j < cols; j++) {
             string diagonal = "";
