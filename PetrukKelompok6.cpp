@@ -63,6 +63,8 @@ int main() {
       cin >> words[i];
   }
 
+cout << endl;
+
   vector<string> matrix = {
         "aaflkhpfssuficiclesgnnh","sfvreomrwlrttsxqqnaoao","qeiaifxaeirfvfysximinji",
         "wstrlgocapbiafiwiwtuacm","feyaeapistpcrlujkoakcers","rvdakpndeehdemsnckkfoah",
