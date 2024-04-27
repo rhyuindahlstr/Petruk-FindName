@@ -8,7 +8,7 @@ bool searchword(vector<string> matrix, string word){
   int rows = matrix.size();
   int cols = matrix[0].size();
 
-//Mencari secara diagonal (kiri ke kanan, atas ke bawah)
+  //Mencari secara diagonal (kiri ke kanan, atas ke bawah)
 for (int i = 0; i < rows; i++){
   for (int j = 0; j < cols; j++){
     string diagonal = "";
@@ -34,4 +34,35 @@ for (int i = rows - 1; i >= 0; i--){
   }
 }
 return false;
+}
+  
+int main() {
+  int N;
+  cin >> N;
+
+  vector<string> words(N);
+  for (int i = 0; i < N; i++) {
+      cin >> words[i];
+  )
+
+  vector<string> matrix = {
+        "aaflkhpfssuficiclesgnnh","sfvreomrwlrttsxqqnaoao","qeiaifxaeirfvfysximinji",
+        "wstrlgocapbiafiwiwtuacm","feyaeapistpcrlujkoakcers","rvdakpndeehdemsnckkfoah",
+        "mrnedslcrriwnrsaafitmmi","yaaecieahymotavhrsstisb","rjsewelccennietohwsglse",
+	"atanyymoieesnesioireltr","utenewebhmybetnnraieben","rclkuteaeqjlsgshtgdskoa",
+	"bhoicatnrrsddecehoolgit","ensluarirsetalocohctohe","fzfudqjymadoyiwyglovesu",
+	"tekalfwonsnaebmiejtzntg","eswposjxeutuyozuwakezhm","kzuhbpezeerflmsnowballh",
+	"nsnowboardytvwyclevohsa","acocrolgziychodrazzilbi","lbvkkwanzaaqinwolpwonsl",
+	"bfreezingrainslilgtmelt","hqpylwhfmnffufpswxnummv",
+  };
+
+  for (int i = 0; i < N; i++) {
+      if (searchWord(matrix, words[i])) {
+          cout << "Ada" << endl;
+      } else {
+          cout << "Tidak Ada" << endl;
+      }
+ }
+
+  return 0;
 }
