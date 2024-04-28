@@ -1,3 +1,8 @@
+//Anggota Kelompok :
+//Muhammad Alvin (2317051040)
+//Intan Nur Laila (2317051109)
+//Rahayu Indah Lestari (2317051073)
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -14,6 +19,18 @@ bool searchword(vector<string> matrix, string word){
             return true;
         }
     }
+
+// Mencari secara vertikal
+    for (int i = 0; i < kolom; i++) {
+        string cols = "";
+        for (int j = 0; j < baris; j++) {
+            cols += matrix[j][i];
+        }
+        if (cols.find(word) != string::npos) {
+            return true;
+        }
+    }
+
 
 // Mencari secara diagonal
     for (int i = 0; i < kolom; i++) {
