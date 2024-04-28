@@ -74,7 +74,8 @@ int main() {
 
 cout << endl;
 
-  vector<string> matrix = {
+int main() {
+	vector<string> matrix = {
               	{'a','l','v','i','n','h','p','t','o','s','e','r','b','a','i','c','l','e','m','g','n','n','h'},
 		{'q','f','v','r','e','o','m','r','w','l','r','t','t','s','n','o','q','q','n','a','o','a','o'},
 		{'w','e','i','a','i','f','x','a','e','i','r','f','v','f','d','w','x','i','m','i','n','j','i'},
