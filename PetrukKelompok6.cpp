@@ -35,7 +35,7 @@ bool searchword(vector<string> matrix, string word){
     }
 
 
-  //Mencari secara diagonal (kiri ke kanan, atas ke bawah)
+//Mencari secara diagonal (kiri ke kanan, atas ke bawah)
 for (int i = 0; i < baris; i++){
   for (int j = 0; j < kolom; j++){
     string diagonal = "";
@@ -74,8 +74,8 @@ int main() {
 
 cout << endl;
 
-  vector<string> matrix = {
-              	{'a','l','v','i','n','h','p','t','o','s','e','r','b','a','i','c','l','e','m','g','n','n','h'},
+	vector<string> matrix = {
+                {'a','l','v','i','n','h','p','t','o','s','e','r','b','a','i','c','l','e','m','g','n','n','h'},
 		{'q','f','v','r','e','o','m','r','w','l','r','t','t','s','n','o','q','q','n','a','o','a','o'},
 		{'w','e','i','a','i','f','x','a','e','i','r','f','v','f','d','w','x','i','m','i','n','j','i'},
 		{'w','s','t','r','l','g','o','c','a','p','b','i','a','f','o','o','i','w','t','u','a','c','m'},
