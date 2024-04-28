@@ -32,18 +32,6 @@ bool searchword(vector<string> matrix, string word){
         }
     }
 
-
-// Mencari secara diagonal
-    for (int i = 0; i < kolom; i++) {
-        string cols = "";
-        for (int j = 0; j < baris; j++) {
-            cols += matrix[j][i];
-        }
-        if (cols.find(word) != string::npos) {
-            return true;
-        }
-    }
-
   //Mencari secara diagonal (kiri ke kanan, atas ke bawah)
 for (int i = 0; i < baris; i++){
   for (int j = 0; j < kolom; j++){
