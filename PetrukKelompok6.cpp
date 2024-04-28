@@ -14,7 +14,15 @@ bool searchword(vector<string> matrix, string word){
   int baris = matrix.size();
   int kolom = matrix[0].size();
 
-  
+
+// Mencari secara horizontal
+    for (int i = 0; i < baris; i++) {
+        if (matrix[i].find(word) != string::npos) {
+            return true;
+        }
+    }
+
+	
 	// Mencari secara vertical
     for (int i = 0; i < kolom; i++) {
         string cols = "";
@@ -22,14 +30,6 @@ bool searchword(vector<string> matrix, string word){
             cols += matrix[j][i];
         }
         if (cols.find(word) != string::npos) {
-            return true;
-        }
-    }
-
-
-// Mencari secara horizontal
-    for (int i = 0; i < baris; i++) {
-        if (matrix[i].find(word) != string::npos) {
             return true;
         }
     }
